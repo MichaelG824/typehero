@@ -20,12 +20,12 @@ export async function OverviewTab({ user }: Props) {
         {/* //Todo: Filling with void for now, may put contributions / something else */}
         <div className="max-w-sm flex-grow" />
       </div>
-      <Card className="flex-grow">
+      <Card className="flex-grow w-full md:max-w-[900px]">
         <CardHeader>
           <CardTitle>Bio</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="max-w-[900px] text-sm break-words">
+          <div className="text-sm break-words">
             {hasBio ? (
               <Markdown>{user.bio}</Markdown>
             ) : (
